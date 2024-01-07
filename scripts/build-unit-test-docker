@@ -90,8 +90,8 @@ packages = {
         build_type="custom",
         build_steps=[
             (
-                " ./bootstrap.sh"
-                f" --prefix={prefix} --with-libraries=context,coroutine"
+                "./bootstrap.sh"
+                f" --prefix={prefix} --with-libraries=context,coroutine,url"
             ),
             "./b2",
             f"./b2 install --prefix={prefix}",
